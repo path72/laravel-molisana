@@ -2,7 +2,9 @@
 
 @section('title','News')
 @section('content')
+
 	<main>
-		<h4>News</h4>
+		<div class="tipo txt_product_grid">News</div>
 	</main>
+
 @endsection

@@ -11,18 +11,15 @@
 body {
 	font-family: 'Open Sans', sans-serif;
 	// font-family: 'Teko', sans-serif;
+	// font-family: 'Playfair Display', serif;
+	// font-family: 'Raleway', sans-serif;
+	font-size: 14px;
 	background-color: $white;
 	color: $blue;
-	// font-size: 14px;
-	/* font-size: 12px; */
 }
 a {
 	text-decoration: none;
 	color: $blue;
-	transition: all .2s ease;
-	// &:hover {
-	// 	color: $green;
-	// }
 }
 ul {
 	list-style: none;
@@ -31,7 +28,6 @@ ul {
 // % HEADER % 
 header {
 	@include flex-col-co;
-	// padding: 10px 0;
 	.logo {
 		img {
 			height: 100%;
@@ -39,13 +35,14 @@ header {
 	}
 	ul.nav {
 		@include flex-row;
-		// border: 1px dashed red;
 		li {
-			padding: 15px 10px;
-			// background-color: $lightblue;
+			line-height: 50px;
 			&:hover {
-				// border: 1pc dashed red;
 				background-color: $lightblue;
+			}
+			a {
+				padding: 10px;
+				// border: 1px dashed red;
 			}
 		}
 	}
@@ -61,13 +58,15 @@ footer {
 	.footer_col {
 		width: 25%;
 		height: 100%;
-		a {
-			color: $grey;
-		}
 		// border: 1px dashed green;
+		ul {
+			margin-bottom: 20px;
+			a {
+				color: $grey;
+			}
+		}
 	}
 }
-
 
 // % TEXTS % 
 .txt_nav {
@@ -75,11 +74,26 @@ footer {
 	font-size: 24px;
 	font-weight: 300;
 }
+.txt_product_grid {
+	font-family: 'Playfair Display', serif;
+	font-size: 22px;
+	line-height: 24px;
+	font-weight: 400;
+}
 .txt_footer_link {
 	font-size: 18px;
 	font-weight: 300;
 }
-.txt_3 {
-	font-size: 0.8em;
-	font-weight: 300;
+.txt_footer_title {
+	font-family: 'Teko', sans-serif;
+	font-size: 26px;
+	line-height: 34px;
+	font-weight: 600;
+	text-transform: uppercase;
 }
+.txt_footer_info {
+	font-size: 11px;
+	line-height: 18px;
+	font-weight: 400;
+}
+

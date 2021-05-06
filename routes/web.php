@@ -13,9 +13,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// var_dump(__DIR__); 
-
-
 // % HOME % 
 Route::get('/', function () {
     return view('home');
@@ -26,7 +23,7 @@ Route::get('/products', function () {
 
 	/**
 	 * pazienza, mettiamo i dati qua!
-	 * non riesco a metterli dentro file php richiamato con require/include
+	 * non riesco a metterli dentro un file php richiamato con require/include
 	 */
 	$query_products = [
 		[
@@ -152,10 +149,11 @@ Route::get('/products', function () {
 	];
 
 	$products_pipe = [
-		'products' => $query_products
+		'prodotti' => $query_products
 	];
 
     return view('products', $products_pipe);
+
 })-> name('products-page');
 
 // % NEWS % 

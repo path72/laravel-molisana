@@ -1,14 +1,13 @@
 /**********************************
  * HOME
  */
+ 
  main {
 	 .jumbotron {
 		 height: 700px;
+		// ma proprio così devo puntare all'immagine?
 		 background-image: url('../../../public/img/molisana-home.jpg');
 		 background-position: center center;
 		 background-size: 1500px;
-		 img {
-			 width: 100%;
-		 }
 	 }
  }
