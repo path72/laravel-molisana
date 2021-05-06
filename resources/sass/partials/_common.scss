@@ -9,7 +9,8 @@
 	box-sizing: border-box;
 }
 body {
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Open Sans', sans-serif;
+	// font-family: 'Teko', sans-serif;
 	background-color: $white;
 	color: $blue;
 	font-size: 14px;
@@ -17,18 +18,38 @@ body {
 }
 a {
 	text-decoration: none;
-	color: $realwhite;
+	color: $blue;
 	transition: all .2s ease;
-	&:hover {
-		color: $green;
+	// &:hover {
+	// 	color: $green;
+	// }
+}
+
+// % HEADER % 
+header {
+	@include flex-col-co;
+	padding: 10px 0;
+	.logo {
+		img {
+			height: 100%;
+		}
+	}
+	ul.nav {
+		@include flex-row;
+		list-style: none;
+		// border: 1px dashed red;
+		li {
+			padding: 0 10px;
+		}
 	}
 }
 
+
 // % TEXTS % 
-.txt_1 {
-	font-size: 1em;
-	text-transform: uppercase;
-	font-weight: 600;
+.txt_nav {
+	font-family: 'Teko', sans-serif;
+	font-size: 24px;
+	font-weight: 300;
 }
 .txt_2 {
 	font-size: 0.9em;

@@ -15,9 +15,13 @@ use Illuminate\Support\Facades\Route;
 
 // var_dump(__DIR__); 
 
+
+// % HOME % 
 Route::get('/', function () {
     return view('home');
-});
+})-> name('home-page');
+
+// % PRODUCTS % 
 Route::get('/products', function () {
 
 	/**
@@ -152,7 +156,9 @@ Route::get('/products', function () {
 	];
 
     return view('products', $products_pipe);
-});
+})-> name('products-page');
+
+// % NEWS %
 Route::get('/news', function () {
     return view('news');
-});
+})-> name('news-page');
