@@ -20,7 +20,6 @@ body {
   font-family: "Open Sans", sans-serif;
   background-color: #ffffff;
   color: #002d73;
-  font-size: 14px;
   /* font-size: 12px; */
 }
 
@@ -30,11 +29,14 @@ a {
   transition: all 0.2s ease;
 }
 
+ul {
+  list-style: none;
+}
+
 header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 10px 0;
 }
 
 header .logo img {
@@ -43,11 +45,30 @@ header .logo img {
 
 header ul.nav {
   display: flex;
-  list-style: none;
 }
 
 header ul.nav li {
-  padding: 0 10px;
+  padding: 15px 10px;
+}
+
+header ul.nav li:hover {
+  background-color: #B3E5FC;
+}
+
+footer {
+  display: flex;
+  width: 1140px;
+  height: 500px;
+  margin: 100px auto;
+}
+
+footer .footer_col {
+  width: 25%;
+  height: 100%;
+}
+
+footer .footer_col a {
+  color: #808080;
 }
 
 .txt_nav {
@@ -56,10 +77,9 @@ header ul.nav li {
   font-weight: 300;
 }
 
-.txt_2 {
-  font-size: 0.9em;
-  font-weight: 400;
-  line-height: 1.4em;
+.txt_footer_link {
+  font-size: 18px;
+  font-weight: 300;
 }
 
 .txt_3 {
@@ -70,6 +90,17 @@ header ul.nav li {
 /**********************************
  * HOME
  */
+
+main .jumbotron {
+  height: 700px;
+  background-image: url(/images/molisana-home.jpg?cb7db241726fb646d7e1c8553429c07c);
+  background-position: center center;
+  background-size: 1500px;
+}
+
+main .jumbotron img {
+  width: 100%;
+}
 
 /**********************************
  * PRODUCTS

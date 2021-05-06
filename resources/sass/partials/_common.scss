@@ -13,7 +13,7 @@ body {
 	// font-family: 'Teko', sans-serif;
 	background-color: $white;
 	color: $blue;
-	font-size: 14px;
+	// font-size: 14px;
 	/* font-size: 12px; */
 }
 a {
@@ -24,11 +24,14 @@ a {
 	// 	color: $green;
 	// }
 }
+ul {
+	list-style: none;
+}
 
 // % HEADER % 
 header {
 	@include flex-col-co;
-	padding: 10px 0;
+	// padding: 10px 0;
 	.logo {
 		img {
 			height: 100%;
@@ -36,11 +39,32 @@ header {
 	}
 	ul.nav {
 		@include flex-row;
-		list-style: none;
 		// border: 1px dashed red;
 		li {
-			padding: 0 10px;
+			padding: 15px 10px;
+			// background-color: $lightblue;
+			&:hover {
+				// border: 1pc dashed red;
+				background-color: $lightblue;
+			}
 		}
+	}
+}
+
+// % FOOTER % 
+footer {
+	@include flex-row;
+	width: 1140px;
+	height: 500px;
+	margin: 100px auto;
+	// border: 1px dashed red;
+	.footer_col {
+		width: 25%;
+		height: 100%;
+		a {
+			color: $grey;
+		}
+		// border: 1px dashed green;
 	}
 }
 
@@ -51,10 +75,9 @@ header {
 	font-size: 24px;
 	font-weight: 300;
 }
-.txt_2 {
-	font-size: 0.9em;
-	font-weight: 400;
-	line-height: 1.4em;
+.txt_footer_link {
+	font-size: 18px;
+	font-weight: 300;
 }
 .txt_3 {
 	font-size: 0.8em;

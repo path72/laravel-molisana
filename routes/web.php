@@ -158,7 +158,7 @@ Route::get('/products', function () {
     return view('products', $products_pipe);
 })-> name('products-page');
 
-// % NEWS %
+// % NEWS % 
 Route::get('/news', function () {
     return view('news');
 })-> name('news-page');

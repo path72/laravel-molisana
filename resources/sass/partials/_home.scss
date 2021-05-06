@@ -1,3 +1,14 @@
 /**********************************
  * HOME
  */
+ main {
+	 .jumbotron {
+		 height: 700px;
+		 background-image: url('../../../public/img/molisana-home.jpg');
+		 background-position: center center;
+		 background-size: 1500px;
+		 img {
+			 width: 100%;
+		 }
+	 }
+ }

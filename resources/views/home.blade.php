@@ -3,6 +3,8 @@
 @section('title','Home')
 @section('content')
 	<main>
-		<h4>Home</h4>
+		<div class="jumbotron">
+			{{-- <img src="{{ asset('img/molisana-home.jpg') }}" alt=""> --}}
+		</div>
 	</main>
 @endsection
