@@ -1,5 +1,10 @@
 @extends('layouts.main')
 
+@php
+	// var_dump(__DIR__); 
+	// var_dump($products);
+@endphp
+
 @section('title','I Prodotti')
 @section('content')
 	<main>
