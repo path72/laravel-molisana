@@ -1,0 +1,41 @@
+/**********************************
+ * COMMON
+ */
+
+// % PROLEGOMENA % 
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Roboto', sans-serif;
+	background-color: $white;
+	color: $blue;
+	font-size: 14px;
+	/* font-size: 12px; */
+}
+a {
+	text-decoration: none;
+	color: $realwhite;
+	transition: all .2s ease;
+	&:hover {
+		color: $green;
+	}
+}
+
+// % TEXTS % 
+.txt_1 {
+	font-size: 1em;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+.txt_2 {
+	font-size: 0.9em;
+	font-weight: 400;
+	line-height: 1.4em;
+}
+.txt_3 {
+	font-size: 0.8em;
+	font-weight: 300;
+}
