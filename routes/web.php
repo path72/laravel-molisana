@@ -33,10 +33,10 @@ Route::get('/news', function () {
 })-> name('news-page');
 
 // % DETTAGLIO % 
-Route::get('/details/{id}', function ($id) {
+Route::get('/details/{idx}', function ($idx) { // laravel salva parametro {idx} in variabile $idx
 	$details_pipe = [
-		'dettaglio' => config('query_products')[$id],
-		'id' => $id
+		'dettaglio' => config('query_products')[$idx]
+		// 'idx' => $idx // non necessario
 	];
     return view('details',$details_pipe);
 })-> name('details-page');
