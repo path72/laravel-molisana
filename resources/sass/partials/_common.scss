@@ -37,7 +37,7 @@ header {
 		@include flex-row;
 		li {
 			line-height: 50px;
-			&:hover {
+			&.active, &:hover {
 				background-color: $lightblue;
 			}
 			a {

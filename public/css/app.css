@@ -50,6 +50,7 @@ header ul.nav li {
   line-height: 50px;
 }
 
+header ul.nav li.active,
 header ul.nav li:hover {
   background-color: #B3E5FC;
 }
