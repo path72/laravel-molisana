@@ -25,6 +25,7 @@
 					@if ($prodotto['tipo']==$tipo)
 						<div class="card">
 							<div class="overlayer">
+								{{-- route() secondo parametro è un array ['idx'=>$key]  --}}
 								<a href="{{route('details-page',['idx'=>$key])}}" class="title txt_product_grid">{{$prodotto['titolo']}}</a>
 								<a href="{{route('details-page',['idx'=>$key])}}" class="icon"><i class="fas fa-utensils"></i></a>
 							</div>
