@@ -33,10 +33,11 @@ Route::get('/news', function () {
 })-> name('news-page');
 
 // % DETTAGLIO % 
-Route::get('/dettaglio/{id}', function ($id) {
+Route::get('/details/{id}', function ($id) {
 	$details_pipe = [
 		'dettaglio' => config('query_products')[$id],
 		'id' => $id
 	];
-    return view('dettagli',$details_pipe);
-})-> name('detail-page');
+    return view('details',$details_pipe);
+})-> name('details-page');
+
