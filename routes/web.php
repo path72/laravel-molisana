@@ -31,3 +31,12 @@ Route::get('/products', function () {
 Route::get('/news', function () {
     return view('news');
 })-> name('news-page');
+
+// % DETTAGLIO % 
+Route::get('/dettaglio/{id}', function ($id) {
+	$details_pipe = [
+		'dettaglio' => config('query_products')[$id],
+		'id' => $id
+	];
+    return view('dettagli',$details_pipe);
+})-> name('detail-page');
