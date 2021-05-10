@@ -15,4 +15,4 @@ const mix = require('laravel-mix');
 mix.js('resources/js/app.js', 'public/js')
     .sass('resources/sass/app.scss', 'public/css')
 	.disableSuccessNotifications()
-	.options({processCssUrls:false}); // ma quindi?
+	.options({processCssUrls:false}); // gestisco io i path delle immagini in css

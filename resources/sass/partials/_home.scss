@@ -5,8 +5,7 @@
  main {
 	 .jumbotron {
 		 height: 700px;
-		// ma proprio così devo puntare all'immagine?
-		 background-image: url('../../../public/img/molisana-home.jpg');
+		 background-image: url('../img/molisana-home.jpg'); // sono in app.css, immagini in /public/
 		 background-position: center center;
 		 background-size: 1500px;
 	 }
